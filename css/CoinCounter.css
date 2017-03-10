@@ -1,28 +1,100 @@
-*
+*{  /*box-sizing:border-box;*/}
+
+body
+{   background: #f7f7f7   }
+
+#Container
 {
-  box-sizing:border-box;
+   height: 600px;
+   width: 320px;
+   background: #ffffff;
+   border: 1px solid #f0f0f0;
+   box-shadow: 1px 1px 2px #e0e0e0;
+   position: relative;
 }
+
+/* title section */
+#AppTitle
+{
+   margin: 40px 0px 0px 0px;
+   font-size: 18px;
+   text-align: center;
+}
+
+/* coin section */
 .coin
-{
-   border-radius: 50%;
-   display: inline-block;
-   margin-right: 20px;
-}
-#coin25
 {
    width: 100px;
    height: 100px;
-   background: red;
+   margin: 40px 0px 0px 40px;
+   background: #d8d8d8;
    position: relative;
 }
-#counter25
+.coin p
 {
-   width: 50px;
-   height: 50px;
-   background: green;
+   color: #888888;
+   font-size: 20px;
+}
+.counter
+{
+   width: 25px;
+   height: 25px;
+   background: #232323;
    position: absolute;
-   top: 24%;
-   left: 24%;
-   display: block;
-   border: 3px solid #fff;
+   top: 0%;
+   left: 75%;
+}
+.counter p
+{
+   color: #f5f5f5;
+   font-size: 12px;
+}
+.coin, .counter
+{
+   border-radius: 50%;
+   display: inline-block;
+}
+.coin p, .counter p
+{
+   position: absolute;
+   margin: 0;
+   top: 50%; 
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* calculate section */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+input[type=number]
+{
+  -moz-appearance:textfield;
+}
+
+#ChangeEntry
+{
+   height: 42px;
+   width: 220px;
+   background: #fafafa;
+   margin: 43px 0px 0px 40px;
+   border: 1px solid #d9d9d9;
+   font-size: 20px;
+   text-align: right;
+   padding-right: 20px;
+   
+}
+#CalculateButton
+{
+   height: 44px;
+   width: 240px;
+   color: #fefefe;
+   Background: #222222;
+   margin: 28px 0px 0px 40px;
+   border: none;
 }

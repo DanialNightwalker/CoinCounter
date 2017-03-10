@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang = "en-US">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "css/normalize.css" type = "text/css" media = "all"/>
     <link rel = "stylesheet" href = "css/CoinCounter.css" type = "text/css" media = "all"/>
     <link rel = "icon" href = "images/NWTitleSymbol.png" type = "image/png"/>
     <title>Coin Counter</title>
  </head>
   <body>
-    <div id="coin25" class="coin"><div id="counter25" class="coin"></div></div>
-  
+    <div id = "Container">
+      <p id = "AppTitle">COIN COUNTER</p>
+      <div id = "Coin25" class = "coin">
+        <p>25</p>
+        <div id = "Counter25" class = "counter"><p>3</p></div>
+      </div>
+      <div id = "Coin10" class = "coin">
+        <p>10</p>
+        <div id = "Counter10" class = "counter"><p>2</p></div>
+      </div>
+      <div id = "Coin5" class = "coin">
+        <p>5</p>
+        <div id = "Counter5" class = "counter"><p>2</p></div>
+      </div>
+      <div id = "Coin1" class = "coin">
+        <p>1</p>
+        <div id = "Counter1" class = "counter"><p>4</p></div>
+      </div>
+      <input id = "ChangeEntry" type = "number">
+      <button id = "CalculateButton" type = "button">CALCULATE</button>
+    </div>
   </body>
 </html>
