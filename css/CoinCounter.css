@@ -33,11 +33,13 @@ body
    margin: 40px 0px 0px 40px;
    background: #d8d8d8;
    position: relative;
+   display: inline-block;
 }
 .coin p
 {
    color: #888888;
    font-size: 20px;
+   
 }
 .counter
 {
@@ -47,6 +49,7 @@ body
    position: absolute;
    top: 0%;
    left: 75%;
+   display: none;
 }
 .counter p
 {
@@ -56,7 +59,7 @@ body
 .coin, .counter
 {
    border-radius: 50%;
-   display: inline-block;
+   
 }
 .coin p, .counter p
 {

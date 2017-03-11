@@ -1,16 +1,23 @@
 function CoinQty()
 {
    var CoinValues = [25, 10, 5, 1];
-   var CoinCounts = [0, 0, 0, 0];
    var EnteredValue = document.getElementById("ChangeEntry").value;
    
    
-   if(Math.floor(EnteredValue/CoinValues[0])>0)
+   for(i = 0; i < 4; i++)
    {
-      document.getElementById("Counter" + CoinValues[0]).innerHTML = Math.floor(EnteredValue/CoinValues[0]);
-      EnteredValue = EnteredValue - (Math.floor(EnteredValue/CoinValues[0]) * CoinValues[0]);
+      var Coins = Math.floor(EnteredValue/CoinValues[i]);
+      if(Coins > 0)
+      {
+         document.getElementById("Counter" + CoinValues[i]).parentElement.style.display = "inherit";
+         document.getElementById("Counter" + CoinValues[i]).innerHTML = Coins;
+         EnteredValue = EnteredValue - (Coins * CoinValues[i]);
+      }
+      else
+      {
+         document.getElementById("Counter" + CoinValues[i]).parentElement.style.display = "none";
+      }
    }
-   
    
    
    
