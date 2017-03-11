@@ -1,5 +1,3 @@
-*{  /*box-sizing:border-box;*/}
-
 body
 {   background: #f7f7f7   }
 
@@ -7,42 +5,41 @@ body
 {
    height: 600px;
    width: 320px;
-   background: #ffffff;
-   border: 1px solid #f0f0f0;
-   box-shadow: 1px 1px 2px #e0e0e0;
-   position: absolute;
-   margin: 0;
    top: 50%; 
    left: 50%;
+   position: absolute;
    transform: translate(-50%, -50%);
+   margin: 0;
+   border: 1px solid #f0f0f0;
+   background: #ffffff;
+   box-shadow: 1px 1px 2px #e0e0e0;   
 }
 
 /* title section */
 #AppTitle
 {
-   margin: 40px 0px 0px 0px;
    font-size: 18px;
    text-align: center;
+   margin: 40px 0px 0px 0px;
 }
 
 /* coin section */
 .coin
 {
-   width: 100px;
    height: 100px;
-   margin: 40px 0px 0px 40px;
-   background: #d8d8d8;
+   width: 100px;
    position: relative;
    display: inline-block;
+   margin: 40px 0px 0px 40px;
+   background: #d8d8d8;
 }
 .coin input
 {
    color: #888888;
    font-size: 20px;
-   border: none;
-   background: none;
    text-align: center;
-   
+   border: none;
+   background: none;   
 }
 .coin input:focus
 {
@@ -50,13 +47,13 @@ body
 }
 .counter
 {
-   width: 25px;
    height: 25px;
-   background: #232323;
-   position: absolute;
+   width: 25px;
    top: 0%;
    left: 75%;
+   position: absolute;
    display: none;
+   background: #232323;
 }
 .counter p
 {
@@ -70,11 +67,11 @@ body
 }
 .coin input, .counter p
 {
-   position: absolute;
-   margin: 0;
    top: 50%; 
    left: 50%;
+   position: absolute;
    transform: translate(-50%, -50%);
+   margin: 0;
 }
 
 /* calculate section */
@@ -95,20 +92,19 @@ input[type=number]
 {
    height: 42px;
    width: 220px;
-   background: #fafafa;
    margin: 43px 0px 0px 40px;
    border: 1px solid #d9d9d9;
+   padding-right: 20px;
    font-size: 20px;
    text-align: right;
-   padding-right: 20px;
-   
+   background: #fafafa;   
 }
 #CalculateButton
 {
    height: 44px;
    width: 240px;
-   color: #fefefe;
-   Background: #222222;
    margin: 28px 0px 0px 40px;
    border: none;
+   color: #fefefe;
+   Background: #222222;
 }

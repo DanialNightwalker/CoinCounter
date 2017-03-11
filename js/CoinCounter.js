@@ -1,5 +1,6 @@
 function CoinQty()
 {
+   //--- Setting variables ---//
    var EnteredValue = document.getElementById("ChangeEntry").value;
    var CoinValues = [];
    var CoinValuesSorted = [];
@@ -7,9 +8,9 @@ function CoinQty()
    {
       CoinValuesSorted[i] = CoinValues[i] = document.getElementById("Coin" + (i+1)).value;
    }
-  
    CoinValuesSorted.sort(function(a, b){return b - a});
 
+   //--- Processing data ---//
    var h = 0;
    while(h < 4)
    {
