@@ -35,11 +35,18 @@ body
    position: relative;
    display: inline-block;
 }
-.coin p
+.coin input
 {
    color: #888888;
    font-size: 20px;
+   border: none;
+   background: none;
+   text-align: center;
    
+}
+.coin input:focus
+{
+   outline: none;
 }
 .counter
 {
@@ -61,7 +68,7 @@ body
    border-radius: 50%;
    
 }
-.coin p, .counter p
+.coin input, .counter p
 {
    position: absolute;
    margin: 0;

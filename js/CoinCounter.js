@@ -1,21 +1,25 @@
 function CoinQty()
 {
-   var CoinValues = [25, 10, 5, 1];
    var EnteredValue = document.getElementById("ChangeEntry").value;
-   
+   var CoinValues = [];
+   for(i = 0; i < 4; i++)
+   {
+      CoinValues[i] = document.getElementById("Coin" + (i+1)).value;
+   }
+     
    
    for(i = 0; i < 4; i++)
    {
       var Coins = Math.floor(EnteredValue/CoinValues[i]);
       if(Coins > 0)
       {
-         document.getElementById("Counter" + CoinValues[i]).parentElement.style.display = "inherit";
-         document.getElementById("Counter" + CoinValues[i]).innerHTML = Coins;
+         document.getElementById("Counter" + (i+1)).parentElement.style.display = "inherit";
+         document.getElementById("Counter" + (i+1)).innerHTML = Coins;
          EnteredValue = EnteredValue - (Coins * CoinValues[i]);
       }
       else
       {
-         document.getElementById("Counter" + CoinValues[i]).parentElement.style.display = "none";
+         document.getElementById("Counter" + (i+1)).parentElement.style.display = "none";
       }
    }
    
